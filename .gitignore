@@ -1,0 +1,26 @@
+# Firebase
+.firebase/
+firebase-debug.log
+
+# Node modules
+node_modules/
+
+# GCP
+google-cloud-sdk/
+google-cloud-cli-linux-x86_64.tar.gz
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local

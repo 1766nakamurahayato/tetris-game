@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ブラウザで動作する本格的なテトリスゲーム">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tetris Game</h1>
+        </header>
+
+        <main>
+            <div class="game-container">
+                <div class="game-info">
+                    <div class="info-panel">
+                        <h2>スコア</h2>
+                        <p id="score">0</p>
+                    </div>
+                    <div class="info-panel">
+                        <h2>レベル</h2>
+                        <p id="level">1</p>
+                    </div>
+                    <div class="info-panel">
+                        <h2>ライン</h2>
+                        <p id="lines">0</p>
+                    </div>
+                </div>
+
+                <div class="game-board-container">
+                    <canvas id="game-board" width="300" height="600"></canvas>
+                </div>
+
+                <div class="next-piece">
+                    <h2>Next</h2>
+                    <canvas id="next-piece" width="120" height="120"></canvas>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h2>操作方法</h2>
+                <ul>
+                    <li><strong>←/→</strong>: 左右移動</li>
+                    <li><strong>↓</strong>: ソフトドロップ</li>
+                    <li><strong>↑ / X / スペース</strong>: 回転</li>
+                    <li><strong>スペース</strong>: ハードドロップ</li>
+                    <li><strong>P</strong>: 一時停止</li>
+                    <li><strong>R</strong>: リスタート</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Tetris Game Project</p>
+        </footer>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
